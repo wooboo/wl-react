@@ -4,5 +4,11 @@
 		"urlPrefix": "/todo",
 		"type": "load",
 		"src": "app/todo/todo"
+	},
+	{
+		"stateName": "wishes",
+		"urlPrefix": "/wishes",
+		"type": "load",
+		"src": "app/components/Wishes"		
 	}
 ]

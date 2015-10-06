@@ -3,6 +3,7 @@ System.config({
   "transpiler": "babel",
   "babelOptions": {
     "blacklist": [],
+		"stage": 0,
     "optional": [
       "runtime"
     ]
@@ -18,10 +19,13 @@ System.config({
 
 System.config({
   "map": {
+    "axios": "npm:axios@0.6.0",
     "babel": "npm:babel-core@5.8.25",
     "babel-runtime": "npm:babel-runtime@5.8.24",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.17",
+    "geiger": "npm:geiger@1.0.4",
+    "immutable": "npm:immutable@3.7.5",
     "json": "github:systemjs/plugin-json@0.1.0",
     "jsx": "github:floatdrop/plugin-jsx@1.1.0",
     "material-ui": "npm:material-ui@0.11.1",
@@ -53,6 +57,9 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "url": "github:jspm/nodelibs-url@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "github:jspm/nodelibs-https@0.1.0": {
+      "https-browserify": "npm:https-browserify@0.0.0"
     },
     "github:jspm/nodelibs-os@0.1.0": {
       "os-browserify": "npm:os-browserify@0.1.2"
@@ -98,6 +105,16 @@ System.config({
     "npm:ast-types@0.8.11": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:axios@0.6.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "http": "github:jspm/nodelibs-http@1.7.1",
+      "https": "github:jspm/nodelibs-https@0.1.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0",
+      "url": "github:jspm/nodelibs-url@0.1.0"
     },
     "npm:babel-runtime@5.8.24": {
       "process": "github:jspm/nodelibs-process@0.1.1"
@@ -239,6 +256,9 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
+    "npm:geiger@1.0.4": {
+      "events": "github:jspm/nodelibs-events@0.1.1"
+    },
     "npm:glob@4.2.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "events": "github:jspm/nodelibs-events@0.1.1",
@@ -267,6 +287,9 @@ System.config({
       "invariant": "npm:invariant@2.1.0",
       "qs": "npm:qs@4.0.0",
       "warning": "npm:warning@2.0.0"
+    },
+    "npm:https-browserify@0.0.0": {
+      "http": "github:jspm/nodelibs-http@1.7.1"
     },
     "npm:iconv-lite@0.4.11": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",

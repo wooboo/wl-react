@@ -89,7 +89,9 @@ var routeBundleConfig = {
 };
 
 var babelCompilerOptions = {
-	modules: 'system'
+	"modules": "system",
+	"blacklist": [],
+	"stage": 0
 };
 
 taskMaker.defineTask('clean', {taskName: 'clean', src: path.output, taskDeps: ['clean-e2e']});

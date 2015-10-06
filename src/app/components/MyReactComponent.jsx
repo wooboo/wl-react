@@ -1,6 +1,8 @@
+'use strict';
+
 import React from 'react'
 
-var colors = ['#FF0000', '#00FF00', '#0000FF']
+const colors = ['#FF0000', '#00FF00', '#0000FF']
 
 class MyReactComponent extends React.Component {
 
@@ -32,4 +34,4 @@ class MyReactComponent extends React.Component {
 	}
 }
 
-export default MyReactComponent
+export default MyReactComponent;

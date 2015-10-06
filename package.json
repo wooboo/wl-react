@@ -14,7 +14,10 @@
     },
     "configFile": "system.config.js",
     "dependencies": {
+      "axios": "npm:axios@^0.6.0",
       "css": "github:systemjs/plugin-css@^0.1.6",
+      "geiger": "npm:geiger@^1.0.4",
+      "immutable": "npm:immutable@^3.7.5",
       "json": "github:systemjs/plugin-json@^0.1.0",
       "jsx": "github:floatdrop/plugin-jsx@^1.1.0",
       "material-ui": "npm:material-ui@^0.11.1",
