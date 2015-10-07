@@ -14,9 +14,9 @@ export default class WishActions extends Action {
 
 	fetchWishes(listId){
 		return axios
-			.get(listId+"/Wish")
+			.get(listId + '/Wish')
 			.then(result=> result.data)
-			.then(wishes=> wishes.map(o=>new WishRecord(o)))
+			.then(wishes=> wishes.map(o => new WishRecord(o)))
 			.then(wishes=> this.emit('fetchWishes', wishes));
 	}
 }

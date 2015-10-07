@@ -3,7 +3,7 @@ System.config({
   "transpiler": "babel",
   "babelOptions": {
     "blacklist": [],
-		"stage": 0,
+    "stage": 0,
     "optional": [
       "runtime"
     ]
